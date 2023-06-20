@@ -1,0 +1,60 @@
+{
+  "name": "pec1_package",
+  "version": "1.0.0",
+  "description": "Boilerplate used for PEC1 project",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "parcel:serve": "parcel src/index.html -p 1234 --target web --open",
+    "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
+    "clean": "rimraf dist .cache .cache-loader .parcel-cache",
+    "dev": "npm-run-all clean parcel:serve",
+    "start": "npm run dev",
+    "build": "npm-run-all clean parcel:build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "postcss src/assets/styles/main.css -o dist/assets/styles/main.css"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "web": "dist/index.html",
+  "targets": {
+    "web": {
+      "context": "browser",
+      "publicUrl": "./",
+      "engines": {
+        "browsers": "last 2 versions, > 0.5%, not dead"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albbmg/HerramientasHTMLyCSSlPEC2"
+  },
+  "keywords": [],
+  "author": "Alba Munoz Garcia <amunozgarcia3@uoc.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/albbmg/HerramientasHTMLyCSSlPEC2"
+  },
+  "homepage": "",
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/plugin-transform-runtime": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@parcel/babel-preset-env": "^2.8.3",
+    "autoprefixer": "^10.4.14",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.9.0",
+    "postcss": "^8.2.1",
+    "postcss-import": "^15.1.0",
+    "posthtml-include": "^1.7.4",
+    "rimraf": "^5.0.0",
+    "sharp": "^0.31.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "postcss-cli": "^10.1.0"
+  }
+}

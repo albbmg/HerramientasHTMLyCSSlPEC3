@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Burgos - Una ciudad para recordar</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Descubre la ciudad de Burgos a través de nuestro portal, así como algunas de sus principales atracciones turísticas.">
+    <meta name="author" content="Alba Munoz Garcia">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logotipo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,400;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <main>
+      <article>
+        <section class="hero">
+          <h2>Descubre Burgos</h2>
+          <span><strong>Explora los lugares más emblemáticos de esta ciudad histórica y disfruta de su rica cultura y gastronomía.</strong></span>
+          <button><a href="#discover">Descubrir</a></button>
+        </section>
+        <section class="categories">
+          <div class="col-1">
+            <picture>
+              <source srcset="./assets/images/historia.png?as=webp&width=50&height=50&crop=focalpoint" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)" type="image/webp" />
+              <source srcset="./assets/images/historia.png?width=50&height=50&crop=focalpoint" media="(max-width: 767px)" type="image/webp" />
+              <source srcset="./assets/images/historia.png?width=50&height=50&crop=focalpoint" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" />
+              <source srcset="./assets/images/historia.png?width=50&height=50&crop=focalpoint" media="(min-width: 1024px)" type="image/webp" />
+              <img src="./assets/images/historia.png" alt="Icono de historia">
+            </picture>                        
+            <a href="historia-cultura.html"><h3>Historia y cultura</h3></a>      
+          </div>
+          <div class="col-2">
+            <picture>
+              <source srcset="./assets/images/turismo.png?as=webp&width=50&height=50&crop=focalpoint" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)" type="image/webp" />
+              <source srcset="./assets/images/turismo.png?width=50&height=50&crop=focalpoint" media="(max-width: 767px)" type="image/webp" />
+              <source srcset="./assets/images/turismo.png?width=50&height=50&crop=focalpoint" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" />
+              <source srcset="./assets/images/turismo.png?width=50&height=50&crop=focalpoint" media="(min-width: 1024px)" type="image/webp" />
+              <img src="./assets/images/turismo.png" alt="Icono de historia">
+            </picture>                        
+            <a href="turismo-ocio.html"><h3>Turismo y ocio</h3></a>
+          </div>
+          <div class="col-3">
+            <picture>
+              <source srcset="./assets/images/gastronomia.png?as=webp&width=50&height=50&crop=focalpoint" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)" type="image/webp" />
+              <source srcset="./assets/images/gastronomia.png?width=50&height=50&crop=focalpoint" media="(max-width: 767px)" type="image/webp" />
+              <source srcset="./assets/images/gastronomia.png?width=50&height=50&crop=focalpoint" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" />
+              <source srcset="./assets/images/gastronomia.png?width=50&height=50&crop=focalpoint" media="(min-width: 1024px)" type="image/webp" />
+              <img src="./assets/images/gastronomia.png" alt="Icono de historia">
+            </picture>                        
+            <a href="gastronomia.html"><h3>Gastronomía</h3></a>
+          </div>
+        </section>
+        <section class="info">
+          <div class="col-1">
+            <p class="subtitle" id="discover">Sobre Burgos</p>
+            <h2>Explora nuestra maravillosa ciudad</h2>
+            <p>Situada en el norte de España, Burgos es una ciudad que te enamorará con su impresionante arquitectura gótica, su rico patrimonio cultural y su inigualable ambiente. Conocida como la ciudad de los reyes y los obispos, Burgos ofrece una experiencia turística única, llena de historia, arte y tradición. Desde la majestuosa Catedral de Santa María hasta el Monasterio de las Huelgas, la ciudad te transportará a través de los siglos y te cautivará con sus leyendas y su gastronomía, que incluye platos típicos como el lechazo asado y el famoso queso de Burgos. ¡Ven a descubrir Burgos y déjate seducir por su encanto!</p>
+            <button><a href="#explore">Descubrir</a></button>
+          </div>
+          <div class="col-2">
+            <picture>
+              <source srcset="./assets/images/cid.jpg?as=webp&width=700&height=500&crop=focalpoint" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)" type="image/webp" />
+              <source srcset="./assets/images/cid.jpg?width=400&height=400&crop=focalpoint" media="(max-width: 767px)" type="image/webp" />
+              <source srcset="./assets/images/cid.jpg?width=300&height=300&crop=focalpoint" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" />
+              <source srcset="./assets/images/cid.jpg?width=500&height=500&crop=focalpoint" media="(min-width: 1024px)" type="image/webp" />
+              <img class="clip-img" src="./assets/images/cid.jpg" alt="El cid Campeador">
+            </picture>                                                                                
+          </div>
+        </section>
+        <section class="detail">
+          <p class="subtitle" id="explore">Explora</p>
+          <h2>Experiencias que Burgos te ofrece</h2>
+          <div class="inner">
+            <div class="col-1">
+              <picture>
+                <source srcset="./assets/images/catedra.jpg?as=webp&width=250&height=250&crop=focalpoint" media="(max-width: 767px)" type="image/webp" />
+                <source srcset="./assets/images/catedra.jpg?as=webp&width=275&height=275&crop=focalpoint" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" />
+                <source srcset="./assets/images/catedra.jpg?as=webp&width=300&height=300&crop=focalpoint" media="(min-width: 1024px)" type="image/webp" />
+                <img src="./assets/images/catedra.jpg" alt="Cátedral de Burgos"/>
+              </picture>                           
+              <a href="cid.html"><h3>La cuna del Cid Campeador</h3></a>  
+              <a href="cid.html"><p>Leer más ></p></a>     
+            </div>
+            <div class="col-2">
+              <picture>
+                <source srcset="./assets/images/castillo.jpg?as=webp&width=250&height=250&crop=focalpoint" media="(max-width: 767px)" type="image/webp" />
+                <source srcset="./assets/images/castillo.jpg?as=webp&width=275&height=275&crop=focalpoint" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" />
+                <source srcset="./assets/images/castillo.jpg?as=webp&width=300&height=300&crop=focalpoint" media="(min-width: 1024px)" type="image/webp" />
+                <img src="./assets/images/castillo.jpg" alt="Imagen del Castillo de Burgos, ubicado en una de las zonas más elevadas de la ciudad" />
+              </picture>
+              <a href="castillo.html"><h3>El Castillo</h3></a>
+              <a href="castillo.html"><p>Leer más ></p></a>
+            </div>
+            <div class="col-3">
+              <picture>
+                <source srcset="./assets/images/comida.jpg?as=webp&width=250&height=250&crop=focalpoint" media="(max-width: 767px)" type="image/webp" />
+                <source srcset="./assets/images/comida.jpg?as=webp&width=275&height=275&crop=focalpoint" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" />
+                <source srcset="./assets/images/comida.jpg?as=webp&width=300&height=300&crop=focalpoint" media="(min-width: 1024px)" type="image/webp" />
+                <img src="./assets/images/comida.jpg" alt="Algunos de los platos más típicos de Burgos, como la morcilla o el lechazo" />
+              </picture>              
+              <a href="comida.html"><h3>Comida, Cultura y Diversión</h3></a>
+              <a href="comida.html"><p>Leer más ></p></a>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
