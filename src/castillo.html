@@ -36,7 +36,7 @@
               <!-- Imagen para móvil (250x250px) -->
               <source srcset="./assets/images/castillo1-low.jpg?width=200&height=200" media="(max-width: 767px)">
               <!-- Imagen de respaldo para navegadores sin soporte para srcset -->
-              <img class="cat-img" src="./assets/images/castillo1-full.jpg" alt="El Cid Campeador">
+              <img class="cat-img" src="./assets/images/castillo1-full.jpg" alt="El Cid Campeador" loading="lazy">
             </picture>      
             <picture>
               <!-- Imagen para escritorio (300x300px) -->
@@ -46,7 +46,7 @@
               <!-- Imagen para móvil (250x250px) -->
               <source srcset="./assets/images/castillo2-low.jpg?width=200&height=200&crop=bottom" media="(max-width: 767px)">
               <!-- Imagen de respaldo para navegadores sin soporte para srcset -->
-              <img class="cat-img" src="./assets/images/castillo2-full.jpg" alt="El Cid Campeador">
+              <img class="cat-img" src="./assets/images/castillo2-full.jpg" alt="El Cid Campeador" loading="lazy">
             </picture>                                                                                       
            </div>
            <p>El Castillo de Burgos es una de las construcciones más emblemáticas y antiguas de la ciudad. Fue construido en el siglo IX y ha sido testigo de la historia de Burgos a lo largo de los siglos.</p>
@@ -59,7 +59,7 @@
                 <source srcset="./assets/images/castillo.jpg?width=300&height=700&crop=focalpoint" media="(max-width: 767px)" type="image/png" />
                 <source srcset="./assets/images/castillo.jpg?width=300&height=300&crop=focalpoint" media="(min-width: 768px) and (max-width: 1023px)" type="image/png" />
                 <source srcset="./assets/images/castillo.jpg?width=500&height=500&crop=focalpoint" media="(min-width: 1024px)" type="image/png" />
-                <img class="image-burgos" src="./assets/images/castillo.jpg" alt="Imagen del Cstillo de Burgos, importante monumento y atracción turística de la ciudad">
+                <img class="image-burgos" src="./assets/images/castillo.jpg" alt="Imagen del Cstillo de Burgos, importante monumento y atracción turística de la ciudad" loading="lazy">
               </picture> 
               <p class="description" style="display:none;">Imagen del Cstillo de Burgos, importante monumento y atracción turística de la ciudad</p>
               <div class="circle pulse"></div>
@@ -72,7 +72,7 @@
       </section>
     </main> 
     <include src="./views/footer.html"></include>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js" async></script>
   </body>
 </html>
   

@@ -36,7 +36,7 @@
               <!-- Imagen para móvil (250x250px) -->
               <source srcset="./assets/images/comida1-low.jpg?width=200&height=200" media="(max-width: 767px)">
               <!-- Imagen de respaldo para navegadores sin soporte para srcset -->
-              <img class="cat-img" src="./assets/images/castillo1-mid.jpg" alt="El Cid Campeador">
+              <img class="cat-img" src="./assets/images/castillo1-mid.jpg" alt="El Cid Campeador" loading="lazy">
             </picture>      
             <picture>
               <!-- Imagen para escritorio (300x300px) -->
@@ -46,7 +46,7 @@
               <!-- Imagen para móvil (250x250px) -->
               <source srcset="./assets/images/comida2-low.jpg?width=200&height=200&crop=bottom" media="(max-width: 767px)">
               <!-- Imagen de respaldo para navegadores sin soporte para srcset -->
-              <img class="cat-img" src="./assets/images/castillo2-full.jpg" alt="El Cid Campeador">
+              <img class="cat-img" src="./assets/images/castillo2-full.jpg" alt="El Cid Campeador" loading="lazy">
             </picture>                                                                                       
            </div>
            <p>La gastronomía de Burgos es rica y variada, ofreciendo una gran cantidad de platos típicos que no te puedes perder. Destacan el lechazo asado, los embutidos como la morcilla, el queso de Burgos y el vino de Ribera del Duero.</p>
@@ -55,7 +55,7 @@
         </div>
         <div class="col-2">
             <div class="image-container">
-              <img class="image-burgos" src="./assets/images/comida.jpg" alt="Imagen de algunas de las comidas más típicas de Burgos">
+              <img class="image-burgos" src="./assets/images/comida.jpg" alt="Imagen de algunas de las comidas más típicas de Burgos" loading="lazy">
               <p class="description" style="display:none;">Algunos de los platos más títpicos de la ciudad de Burgos, como la morcilla o el lechazo</p>
               <div class="circle pulse"></div>
             </div>
@@ -67,7 +67,7 @@
       </section>
     </main> 
     <include src="./views/footer.html"></include>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js" async></script>
   </body>
 </html>
   
