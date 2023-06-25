@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Burgos - Una ciudad para recordar</title>
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
+    <link rel="preload" href="./assets/styles/main.css" as="style">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css" onload="this.rel='stylesheet'" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Descubre la ciudad de Burgos a través de nuestro portal, así como algunas de sus principales atracciones turísticas.">
     <meta name="author" content="Alba Munoz Garcia">
@@ -27,27 +28,21 @@
             </svg>            
           </span>
            <h2>Comida, Cultura y Diversión</h2>
-           <div class="img-gallery">                    
+           <div class="img-gallery">     
             <picture>
-              <!-- Imagen para escritorio (300x300px) -->
-              <source srcset="./assets/images/comida1-mid.jpg?width=250&height=250" media="(min-width: 1024px)">
-              <!-- Imagen para tableta (275x275px) -->
-              <source srcset="./assets/images/comida1-mid.jpg?width=225&height=225" media="(min-width: 768px)">
-              <!-- Imagen para móvil (250x250px) -->
-              <source srcset="./assets/images/comida1-low.jpg?width=200&height=200" media="(max-width: 767px)">
-              <!-- Imagen de respaldo para navegadores sin soporte para srcset -->
-              <img class="cat-img" src="./assets/images/castillo1-mid.jpg" alt="El Cid Campeador" loading="lazy">
-            </picture>      
+              <source srcset="./assets/images/comida1.jpg?as=webp&width=700&height=500&crop=focalpoint" type="image/webp" />
+              <source srcset="./assets/images/comida1.jpg?width=400&height=400&crop=focalpoint" media="(max-width: 767px)" type="image/webp" />
+              <source srcset="./assets/images/comida1.jpg?width=300&height=300&crop=focalpoint" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" />
+              <source srcset="./assets/images/comida1.jpg?width=500&height=500&crop=focalpoint" media="(min-width: 1024px)" type="image/webp" />
+              <img class="cat-img" src="./assets/images/comida1.jpg" alt="El cid Campeador" loading="lazy" width="300" height="300">
+            </picture> 
             <picture>
-              <!-- Imagen para escritorio (300x300px) -->
-              <source srcset="./assets/images/comida2-full.jpg?width=250&height=250&crop=bottom" media="(min-width: 1024px)">
-              <!-- Imagen para tableta (275x275px) -->
-              <source srcset="./assets/images/comida2-mid.jpg?width=225&height=225&crop=bottom" media="(min-width: 768px)">
-              <!-- Imagen para móvil (250x250px) -->
-              <source srcset="./assets/images/comida2-low.jpg?width=200&height=200&crop=bottom" media="(max-width: 767px)">
-              <!-- Imagen de respaldo para navegadores sin soporte para srcset -->
-              <img class="cat-img" src="./assets/images/castillo2-full.jpg" alt="El Cid Campeador" loading="lazy">
-            </picture>                                                                                       
+              <source srcset="./assets/images/comida1.jpg?as=webp&width=700&height=500&crop=focalpoint" type="image/webp" />
+              <source srcset="./assets/images/comida1.jpg?width=400&height=400&crop=focalpoint" media="(max-width: 767px)" type="image/webp" />
+              <source srcset="./assets/images/comida1.jpg?width=300&height=300&crop=focalpoint" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" />
+              <source srcset="./assets/images/comida1.jpg?width=500&height=500&crop=focalpoint" media="(min-width: 1024px)" type="image/webp" />
+              <img class="cat-img" src="./assets/images/comida1.jpg" alt="El cid Campeador" loading="lazy" width="300" height="300">
+            </picture>                                                                                                     
            </div>
            <p>La gastronomía de Burgos es rica y variada, ofreciendo una gran cantidad de platos típicos que no te puedes perder. Destacan el lechazo asado, los embutidos como la morcilla, el queso de Burgos y el vino de Ribera del Duero.</p>
            <p>Estos platos tienen una gran importancia en la gastronomía de la ciudad y son considerados como algunas de las joyas culinarias de la región. Si visitas Burgos, no puedes dejar de probar su deliciosa comida.</p>
@@ -55,7 +50,13 @@
         </div>
         <div class="col-2">
             <div class="image-container">
-              <img class="image-burgos" src="./assets/images/comida.jpg" alt="Imagen de algunas de las comidas más típicas de Burgos" loading="lazy">
+              <picture>
+                <source srcset="./assets/images/comida.jpg?as=webp&width=700&height=500&crop=focalpoint" type="image/webp" />
+                <source srcset="./assets/images/comida.jpg?width=400&height=400&crop=focalpoint" media="(max-width: 767px)" type="image/webp" />
+                <source srcset="./assets/images/comida.jpg?width=300&height=300&crop=focalpoint" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" />
+                <source srcset="./assets/images/comida.jpg?width=500&height=500&crop=focalpoint" media="(min-width: 1024px)" type="image/webp" />
+                <img class="image-burgos" src="./assets/images/comida.jpg" alt="Imagen de algunas de las comidas más típicas de Burgos" loading="lazy" width="500" height="500">
+              </picture>
               <p class="description" style="display:none;">Algunos de los platos más títpicos de la ciudad de Burgos, como la morcilla o el lechazo</p>
               <div class="circle pulse"></div>
             </div>

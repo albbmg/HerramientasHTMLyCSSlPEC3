@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Burgos - Una ciudad para recordar</title>
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
+    <link rel="preload" href="./assets/styles/main.css" as="style">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css" onload="this.rel='stylesheet'" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Descubre la ciudad de Burgos a través de nuestro portal, así como algunas de sus principales atracciones turísticas.">
     <meta name="author" content="Alba Munoz Garcia">
@@ -31,7 +32,7 @@
               <source srcset="./assets/images/cordero.jpg?as=webp&width=250&height=250&crop=focalpoint" media="(max-width: 767px)" type="image/webp" />
               <source srcset="./assets/images/cordero.jpg?as=webp&width=275&height=275&crop=focalpoint" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" />
               <source srcset="./assets/images/cordero.jpg?as=webp&width=300&height=300&crop=focalpoint" media="(min-width: 1024px)" type="image/webp" />
-              <img src="./assets/images/cordero.jpg" alt="Chuletillas de cordero Típico plato de la comida burgalesa" loading="lazy">
+              <img src="./assets/images/cordero.jpg" alt="Chuletillas de cordero Típico plato de la comida burgalesa" loading="lazy" width="300" height="300">
             </picture>
             <a href="comida.html"><h3>Chuletillas de cordero</h3></a>  
             <a href="comida.html"><p>Leer más ></p></a>     
@@ -41,13 +42,18 @@
               <source srcset="./assets/images/queso.jpg?as=webp&width=250&height=250&crop=focalpoint" media="(max-width: 767px)" type="image/webp" />
               <source srcset="./assets/images/queso.jpg?as=webp&width=275&height=275&crop=focalpoint" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" />
               <source srcset="./assets/images/queso.jpg?as=webp&width=300&height=300&crop=focalpoint" media="(min-width: 1024px)" type="image/webp" />
-              <img src="./assets/images/queso.jpg" alt="Chuletillas de cordero Típico plato de la comida burgalesa" loading="lazy">
+              <img src="./assets/images/queso.jpg" alt="Chuletillas de cordero Típico plato de la comida burgalesa" loading="lazy" width="300" height="300">
             </picture>
             <a href="comida.html"><h3>Los mejores postres: Queso fresco de Burgos</h3></a>
             <a href="comida.html"><p>Leer más ></p></a>
           </div>
           <div class="col-3">
-            <img class="image-burgos" src="./assets/images/comida.jpg" alt="Algunos de los platos más típicos de Burgos, como la morcilla o el lechazo" loading="lazy">
+            <picture>
+              <source srcset="./assets/images/comida.jpg?as=webp&width=250&height=250&crop=focalpoint" media="(max-width: 767px)" type="image/webp" />
+              <source srcset="./assets/images/comida.jpg?as=webp&width=275&height=275&crop=focalpoint" media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" />
+              <source srcset="./assets/images/comida.jpg?as=webp&width=300&height=300&crop=focalpoint" media="(min-width: 1024px)" type="image/webp" />
+              <img class="image-burgos" src="./assets/images/comida.jpg" alt="Algunos de los platos más típicos de Burgos, como la morcilla o el lechazo" loading="lazy" width="300" height="300">
+            </picture>
             <a href="comida.html"><h3>Comida Cultura y Diversión</h3></a>
             <a href="comida.html"><p>Leer más ></p></a>
           </div>

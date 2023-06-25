@@ -16,6 +16,7 @@
 @import '_reset.css';
 @import '_elements.css';
 
+
 * {
   box-sizing: border-box;
   font-family: var(--primary-font );
@@ -185,7 +186,7 @@ footer p {
   justify-content: center;
   gap: 50px;
   height: 75vh; 
-  background-image: url('../images/burgos-hero.jpg');
+  background-image: url('../images/burgos-hero.webp');
   background-size: cover;
   background-position: center;
   background-color: rgba(255, 255, 255, 0.87);
@@ -305,7 +306,7 @@ footer p {
   justify-content: center;
   gap: 50px;
   height: 25vh; 
-  background-image: url('../images/burgos-hero.jpg');
+  background-image: url('../images/burgos-hero.webp');
   background-size: cover;
   background-position: center;
   background-color: rgba(255, 255, 255, 0.87);
@@ -353,7 +354,7 @@ footer p {
   justify-content: center;
   gap: 50px;
   height: 25vh; 
-  background-image: url('../images/burgos-hero.jpg');
+  background-image: url('../images/burgos-hero.webp');
   background-size: cover;
   background-position: center;
   background-color: rgba(255, 255, 255, 0.87);
@@ -365,6 +366,8 @@ footer p {
 
 .image-burgos {
   border-radius: 20px; 
+  max-width: 90vw;
+  object-fit: cover; 
 }
 .cat-img {
   border-radius: 20px;
